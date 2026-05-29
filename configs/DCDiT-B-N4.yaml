@@ -1,0 +1,18 @@
+model:
+  hnet:
+    arch_layout: ["c2", ["D12"], "c2"]
+    d_model: [768, 768]
+    num_heads: [12, 12]
+    enc_dec_dim_factor: [4, null]
+    fp32_router_dechunk: true
+
+training:
+  multi_budget_training: true
+  multi_budget_drop_fractions: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
+  multi_budget_start_step: 50000
+  downsample_factor: 4.0
+  ratio_loss_weight: 0.03
+
+data:
+  feature_path: "../imagenet/features_train/"
+  image_size: 256
