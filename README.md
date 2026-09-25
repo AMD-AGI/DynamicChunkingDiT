@@ -1,8 +1,12 @@
-# DC-DiT: Adaptive Compute and Elastic Inference for Visual Generation via Dynamic Chunking
+# [NeurIPS 2026] DC-DiT: Adaptive Compute and Elastic Inference for Visual Generation via Dynamic Chunking
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.06351-b31b1b)](https://arxiv.org/abs/2603.06351)
 
 **Akash Haridas, Utkarsh Saxena, Parsa Ashrafi Fashi, Mehdi Rezagholizadeh, Vikram Appia, Emad Barsoum**
+
+## News
+
+- **2026-09-24** 🎉 DC-DiT has been accepted to NeurIPS 2026 Main Track!
 
 ---
 
