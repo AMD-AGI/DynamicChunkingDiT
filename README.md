@@ -1,6 +1,7 @@
 # [NeurIPS 2026] DC-DiT: Adaptive Compute and Elastic Inference for Visual Generation via Dynamic Chunking
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.06351-b31b1b)](https://arxiv.org/abs/2603.06351)
+[![Model checkpoints](https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-sm.svg)](https://huggingface.co/amd/DynamicChunkingDiT)
 
 **Akash Haridas, Utkarsh Saxena, Parsa Ashrafi Fashi, Mehdi Rezagholizadeh, Vikram Appia, Emad Barsoum**
 
@@ -85,6 +86,13 @@ torchrun --nnodes=1 --nproc_per_node=8 sample_ddp.py \
 ```
 
 ## Evaluation
+
+We release pretrained ImageNet 256 checkpoints for the reported results.
+
+| Model | Config | Checkpoint |
+| --- | --- | --- |
+| DC-DiT-S | [`configs/DCDiT-S-N4.yaml`](configs/DCDiT-S-N4.yaml) | [S-256](https://huggingface.co/amd/DynamicChunkingDiT/tree/main/S-256) |
+| DC-DiT-XL | [`configs/DCDiT-XL-N4.yaml`](configs/DCDiT-XL-N4.yaml) | [XL-256](https://huggingface.co/amd/DynamicChunkingDiT/tree/main/XL-256) |
 
 After generating samples with `sample_ddp.py`, use the standard [OpenAI ADM evaluation suite](https://github.com/openai/guided-diffusion/tree/main/evaluations) to compute FID and Inception Score against the appropriate ImageNet reference batch.
 
